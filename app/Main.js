@@ -12,3 +12,7 @@ function ExampleComponent() {
 
 const root = React.createRoot(document.querySelector("#app"))
 root.Render(<ExampleComponent />)
+
+if (module.hot) {
+  module.hot.accept()
+}
